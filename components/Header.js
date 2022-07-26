@@ -20,31 +20,31 @@ export default function Header() {
           className=" hover:bg-black flex items-center"
           onClick={() => router.push("/discover")}
         >
-          <p className="text-white font-thin text-sm py-4 h-12 w-[104px]">
+          <p className="text-white font-thin text-sm py-4  w-[104px]">
             Home
           </p>
         </button>
-        <p className="bg-black h-12 w-[1px]"></p>
+        <p className="bg-black h-13 w-[1px]"></p>
         <button
           type="button"
           className="hover:bg-black flex items-center"
-          onClick={() => router.push("/discover")}
+          onClick={() => router.push("/layout/Stream")}
         >
-          <p className="text-white font-thin text-sm  py-4 h-12 w-[104px]">
+          <p className="text-white font-thin text-sm  py-4  w-[104px]">
             Stream
           </p>
         </button>
-        <p className="bg-black h-12 w-[1px]"></p>
+        <p className="bg-black h-13 w-[1px]"></p>
         <button
           type="button"
           className="hover:bg-black flex items-center"
           onClick={() => router.push("/discover")}
         >
-          <p className="text-white font-thin text-sm  py-4 h-12 w-[104px]">
+          <p className="text-white font-thin text-sm  py-4  w-[104px]">
             Library
           </p>
         </button>
-        <p className="bg-black h-12 w-[1px]"></p>
+        <p className="bg-black h-13 w-[1px]"></p>
 
         <PrimarySearchAppBar />
 
@@ -53,7 +53,7 @@ export default function Header() {
           className="hover:bg-black flex items-center"
           onClick={() => router.push("/discover")}
         >
-          <p className="text-white font-thin text-sm  py-4 h-12 w-[104px]">
+          <p className="text-white font-thin text-sm  py-4  w-[104px]">
             Try Pro
           </p>
         </button>
@@ -62,7 +62,7 @@ export default function Header() {
           className="hover:bg-black flex items-center"
           onClick={() => router.push("/discover")}
         >
-          <p className="text-white font-thin text-sm  py-4 h-12 w-[104px]">
+          <p className="text-white font-thin text-sm  py-4  w-[104px]">
             Upload
           </p>
         </button>
