@@ -6,15 +6,10 @@ import "@fontsource/roboto/700.css";
 import Layout from "components/Layout";
 import Header from "components/Header";
 
+import "styles/slide.scss";
+
 function MyApp({ Component, pageProps }) {
-  return (
-    <>
-    <Layout>
-    <Component {...pageProps} />
-    </Layout>
-    </>
- 
-  )
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

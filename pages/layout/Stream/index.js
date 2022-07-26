@@ -1,12 +1,9 @@
-import Layout from 'components/Layout'
+import Layout from "components/Layout";
 
-export default function Contact() {
+export default function Stream() {
   return (
-  <div>
-    <Layout>
-        asdasd
-
-    </Layout>
-</div>
-  )
+    <div>
+      <Layout></Layout>
+    </div>
+  );
 }
