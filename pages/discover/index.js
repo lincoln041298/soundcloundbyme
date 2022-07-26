@@ -6,7 +6,7 @@ export default function Discover() {
     <div>
       <Layout>
         <section className="mx-auto max-w-[1240px] pt-20 grid grid-cols-8">
-          <div className="col-span-6">
+          <div className="col-span-6 bg-white ">
             <LeftSide />
           </div>
           <div className="col-span-2">

@@ -2,12 +2,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import img1 from "public/avataralbul.jpeg";
-import img2 from "public/img2.jpeg";
-import img3 from "public/img3.jpeg";
-import img4 from "public/img4.jpeg";
-import img5 from "public/avtrecent.jpeg";
-
+import { Recentlies } from "data/songData";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -29,35 +24,23 @@ export default function Slider() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <p className="max-w-[172.97px]">
-          <SwiperSlide>
-            <Image className="w-[172.97px] object-cover" src={img1}></Image>
-          </SwiperSlide>
-        </p>
-        <p className="max-w-[172.97px]">
-          <SwiperSlide>
-            <Image className="w-[172.97px] object-cover" src={img2}></Image>
-          </SwiperSlide>
-        </p>
-        <p className="max-w-[172.97px]">
-          <SwiperSlide>
-            <Image className="w-[172.97px] object-cover" src={img3}></Image>
-          </SwiperSlide>
-        </p>
-        <p className="max-w-[172.97px]">
-          <SwiperSlide>
-            <Image className="w-[172.97px] object-cover" src={img4}></Image>
-          </SwiperSlide>
-        </p>
-        <p className="max-w-[172.97px]">
-          <SwiperSlide>
-            <Image className="w-[172.97px] object-cover" src={img5}></Image>
-          </SwiperSlide>
-        </p>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {Recentlies.map((Recently) => {
+          return (
+            <p key={Recently.id} className=" ">
+              <SwiperSlide>
+                <div className="flex flex-col">
+                  <Image
+                    width={172.97}
+                    height={172.97}
+                    src={Recently.src}
+                  ></Image>
+                  <p className="text-sm text-left line-clamp-1 my-1.5">{Recently.name}</p>
+                  <p className="text-sm text-left line-clamp-1 my-1.5">{Recently === Recently.title ? Recently.title  : Recently.follow}</p>
+                </div>
+              </SwiperSlide>
+            </p>
+          );
+        })}
       </Swiper>
     </>
   );
