@@ -1,14 +1,15 @@
 import Slider from "components/Slider";
-import { Recentlies } from "data/songData"
+import { Recentlies } from "data/songData";
+import Image from "next/image";
 export default function LeftSide() {
   return (
     <section>
-      {Recentlies.map((Recently)=> {
+      {Recentlies.map((Recently) => {
         return (
           <div>
-            <Image src={Recently.src}></Image>
+            <Image width={500} height={500} src={Recently.src}></Image>
           </div>
-        )
+        );
       })}
       <div>
         <p className="text-black">Recently Played</p>
