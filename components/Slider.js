@@ -34,8 +34,12 @@ export default function Slider() {
                     height={172.97}
                     src={Recently.src}
                   ></Image>
-                  <p className="text-sm text-left line-clamp-1 my-1.5">{Recently.name}</p>
-                  <p className="text-sm text-left line-clamp-1 my-1.5">{Recently === Recently.title ? Recently.title  : Recently.follow}</p>
+                  <p className="text-sm text-left line-clamp-1 my-1.5">
+                    {Recently.name}
+                  </p>
+                  <p className="text-sm text-left line-clamp-1 my-1.5">
+                    {Recently.title || Recently.follow || Recently.toptrack}
+                  </p>
                 </div>
               </SwiperSlide>
             </p>

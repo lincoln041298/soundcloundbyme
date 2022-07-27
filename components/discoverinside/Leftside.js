@@ -6,7 +6,21 @@ export default function LeftSide() {
         <p className="text-black">Recently Played</p>
       </div>
       <div>
-        <Slider></Slider>
+        <div>
+          <Slider></Slider>
+        </div>
+        <div>
+          <Slider></Slider>
+        </div>
+        <div>
+          <Slider></Slider>
+        </div>
+        <div>
+          <Slider></Slider>
+        </div>
+        <div>
+          <Slider></Slider>
+        </div>
       </div>
     </section>
   );
