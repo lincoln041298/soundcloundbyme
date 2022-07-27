@@ -1,6 +1,7 @@
 import LeftSide from "components/discoverinside/Leftside";
 import RightSide from "components/discoverinside/Rightside";
 import Layout from "components/Layout";
+import Playing from "components/Playing";
 export default function Discover() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function Discover() {
           </div>
         </section>
       </Layout>
+      <Playing/>
     </div>
   );
 }
