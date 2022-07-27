@@ -5,23 +5,23 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
 export default function Playing() {
-  const data = useContext(Songs);
-  console.log(data);
+  const { song, handleSetSong } = useContext(Songs);
+  console.log(song.song);
 
   const handleClickNext = () => {
-    handleRecently(Recentlies.id + 1);
+    handleSetSong(song.id + 1);
   };
   const handleClickPrev = () => {
-    handleRecently(Recentlies.id - 1);
+    handleSetSong(song.id - 1);
   };
 
   return (
     <div>
       <AudioPlayer
-        className="player myusic"
-        src={data.song.song}
+        className="player-music"
+        src={song.url}
         layout="stacked-reverse"
-        showSkipControl={true}
+        showSkipControls={true}
         showJumpControls={false}
         onClickNext={handleClickNext}
         onClickPrevious={handleClickPrev}

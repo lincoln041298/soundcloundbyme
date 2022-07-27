@@ -14,7 +14,7 @@ export default function Discover() {
   };
   console.log(Recentlies);
   return (
-    <Songs.Provider value={{ song, Recentlies }}>
+    <Songs.Provider value={{ song, Recentlies, handleSetSong }}>
       <div>
         <Layout>
           <section className="mx-auto max-w-[1240px] pt-20 grid grid-cols-8">

@@ -4,13 +4,14 @@ export const Recentlies = [
     name: "SunFlower 2021 - [DJ GiangTo] X.X",
     title: "Related tracks",
     src: "/avataralbul.jpeg",
-    song: "/music/Giangto.mp3",
+    url: "/music/Tuancui.mp3",
   },
   {
     id: 1,
     authorname: "Chipmunk2",
     follow: "7,377 flower",
     author: "/avtrecent.jpeg",
+    url: "/music/Giangto.mp3",
   },
   {
     id: 2,
