@@ -24,9 +24,9 @@ export default function Slider() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {Recentlies.map((Recently) => {
+        {Recentlies.map((Recently, index) => {
           return (
-            <p key={Recently.id} className=" ">
+            <p key={index} className=" ">
               <SwiperSlide>
                 <div className="flex flex-col">
                   <Image
@@ -35,10 +35,16 @@ export default function Slider() {
                     style={Recently.author && { borderRadius: "9999px" }}
                     src={Recently.src || Recently.author}
                   ></Image>
-                  <p className="text-sm text-left line-clamp-1 my-1.5" style={ Recently.authorname &&  {textAlign: 'center'}}>
-                    {Recently.name || Recently.authorname }
+                  <p
+                    className="text-sm text-left line-clamp-1 my-1.5"
+                    style={Recently.authorname && { textAlign: "center" }}
+                  >
+                    {Recently.name || Recently.authorname}
                   </p>
-                  <p className="text-sm text-left line-clamp-1 my-1.5" style={  Recently.follow &&  {textAlign: 'center'}}>
+                  <p
+                    className="text-sm text-left line-clamp-1 my-1.5"
+                    style={Recently.follow && { textAlign: "center" }}
+                  >
                     {Recently.title || Recently.follow || Recently.toptrack}
                   </p>
                 </div>

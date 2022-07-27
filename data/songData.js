@@ -4,7 +4,7 @@ export const Recentlies = [
     name: "SunFlower 2021 - [DJ GiangTo] X.X",
     title: "Related tracks",
     src: "/avataralbul.jpeg",
-    song: "/music/Giangto.mp3"
+    song: "/music/Giangto.mp3",
   },
   {
     id: 1,
@@ -49,7 +49,7 @@ export const Recentlies = [
     src: "/img7.jpg",
   },
   {
-    id: 7,
+    id: 8,
     authorname: "Bác Sĩ Hải",
     follow: "102k followers",
     author: "/avtrecent2.jpg",
