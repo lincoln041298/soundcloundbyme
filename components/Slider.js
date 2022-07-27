@@ -32,7 +32,8 @@ export default function Slider() {
                   <Image
                     width={172.97}
                     height={172.97}
-                    src={Recently.src}
+                    style={Recently.author === Recently.author ? {borderRadius: '9999px'} : {}}
+                    src={Recently.src || Recently.author}
                   ></Image>
                   <p className="text-sm text-left line-clamp-1 my-1.5">
                     {Recently.name}

@@ -9,7 +9,7 @@ export const Recentlies = [
     id: 1,
     name: "Chipmunk2",
     follow: "7,377 flower",
-    src: "/avtrecent.jpeg",
+    author: "/avtrecent.jpeg",
   },
   {
     id: 2,
@@ -51,6 +51,6 @@ export const Recentlies = [
     id: 7,
     name: "Bác Sĩ Hải",
     follow: "102k followers",
-    src: "/avtrecent2.jpg",
+    author: "/avtrecent2.jpg",
   },
 ];

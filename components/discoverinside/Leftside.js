@@ -3,7 +3,7 @@ export default function LeftSide() {
   return (
     <section className="px-4">
       <div>
-        <p className="text-black">Recently Played</p>
+        <p className="text-black text-3xl font-thin py-5">Recently Played</p>
       </div>
       <div>
         <div>
@@ -12,7 +12,7 @@ export default function LeftSide() {
         <div>
           <Slider></Slider>
         </div>
-        <div>
+        {/* <div>
           <Slider></Slider>
         </div>
         <div>
@@ -20,7 +20,7 @@ export default function LeftSide() {
         </div>
         <div>
           <Slider></Slider>
-        </div>
+        </div> */}
       </div>
     </section>
   );
