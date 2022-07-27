@@ -6,7 +6,7 @@ import "react-h5-audio-player/lib/styles.css";
 
 export default function Playing() {
   const { song, handleSetSong } = useContext(Songs);
-  console.log(song.song);
+  console.log(song.url);
 
   const handleClickNext = () => {
     handleSetSong(song.id + 1);
@@ -21,8 +21,6 @@ export default function Playing() {
         className="player-music"
         src={song.url}
         layout="stacked-reverse"
-        autoPlay={true}
-        preload
         showSkipControls={true}
         showJumpControls={false}
         onClickNext={handleClickNext}
