@@ -21,6 +21,8 @@ export default function Playing() {
         className="player-music"
         src={song.url}
         layout="stacked-reverse"
+        autoPlay={true}
+        preload
         showSkipControls={true}
         showJumpControls={false}
         onClickNext={handleClickNext}
