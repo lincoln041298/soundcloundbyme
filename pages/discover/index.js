@@ -12,7 +12,7 @@ export default function Discover() {
     if (!song) setSong(Recentlies[0]);
     else setSong(song);
   };
-  console.log(Recentlies);
+  console.log(song);
   return (
     <Songs.Provider value={{ song, Recentlies, handleSetSong }}>
       <div>
