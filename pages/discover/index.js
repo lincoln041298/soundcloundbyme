@@ -17,7 +17,7 @@ export default function Discover() {
     <Songs.Provider value={{ song, Recentlies, handleSetSong }}>
       <div>
         <Layout>
-          <section className="mx-auto max-w-[1240px] pt-20 grid grid-cols-8">
+          <section className="mx-auto max-w-[1240px] pt-14 grid grid-cols-8">
             <div className="col-span-6 bg-white ">
               <LeftSide />
             </div>

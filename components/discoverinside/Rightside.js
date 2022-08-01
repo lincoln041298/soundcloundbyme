@@ -1,3 +1,5 @@
+import Artists from "components/Artists";
+
 export default function RightSide() {
-  return <div>Ben phai</div>;
+  return <div><Artists/></div>;
 }

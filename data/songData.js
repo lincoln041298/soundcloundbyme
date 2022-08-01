@@ -56,3 +56,81 @@ export const Recentlies = [
     author: "/avtrecent2.jpg",
   },
 ];
+
+
+export const TheUpLoads = [
+  {
+    id: 0,
+    author: "simple",
+    name: "MIXTAPE VIETMIX VOL10",
+    title: "Related tracks",
+    src: "/avataralbul.jpeg",
+    url: "/music/Tuancui.mp3",
+  },
+  {
+    id: 1,
+    author: "Sơn Mèo ",
+    name: "Maxtape- xung căng tươi 2022",
+    title: "Related tracks",
+    src: "/avataralbul.jpeg",
+    url: "/music/Tuancui.mp3",
+  },
+  {
+    id: 2,
+    author: "1900",
+    name: "Mya 1900",
+    title: "Related tracks",
+    src: "/avataralbul.jpeg",
+    url: "/music/Tuancui.mp3",
+  },
+  {
+    id: 3,
+    author: "Hoang Long 02",
+    name: "Flight room music",
+    title: "Related tracks",
+    src: "/avataralbul.jpeg",
+    url: "/music/Tuancui.mp3",
+  },
+  {
+    id: 4,
+    author: "LX *",
+    name: "Vì mẹ anh bắt chia tay",
+    title: "Related tracks",
+    src: "/avataralbul.jpeg",
+    url: "/music/Tuancui.mp3",
+  },
+]
+
+
+export const ArtistsSong = [
+  {
+    id: 0,
+    name: "Swea Lee",
+    follow: "12.3k",
+    tracks: "53",
+    image: 'artist/sweaLee.jpg'
+  },
+  {
+    id: 1,
+    name: "Future",
+    follow: "10k",
+    tracks: "630",
+    image: 'artist/future.jpg'
+  },
+
+  {
+    id: 2,
+    name: "ato",
+    follow: "10k",
+    tracks: "630",
+    image: 'artist/avatar1.jpg'
+  },
+
+  {
+    id: 3,
+    name: "Prisethelord",
+    follow: "10k",
+    tracks: "630",
+    image: 'artist/avatar2.jpg'
+  }
+]
